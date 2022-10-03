@@ -6,16 +6,19 @@
 
 import numpy as np
 import pandas as pd
+
+
+df = pd.DataFrame({'Computer': np.repeat(['Model 1', 'Model 2', 'Model 3'], 3),
+  'Compiler': np.tile(np.repeat(['Compiler 1', 'Compiler 2', ' Compiler 3'], 1), 3),
+  'score': [9.9, 8.0, 7.1, 12.5, 10.6, 9.1, 10.8, 9.0, 7.8]})
+
+
+print(df)
+
+
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
 
-df = pd.DataFrame({
-  'computer': np.repeat(['Model1', 'Model2', 'Model3'], 3),
-  'compiler': np.tile(np.repeat(['1','2','3'], 1), 3),
-  'score': [9.9, 8.0, 7.1, 12.5, 10.6, 9.1, 10.8, 9.0, 7.8]
-})
-print(df)
 
-model = ols('score ~ C(computer) + C(compiler) + C(computer):C(compiler)', data=df).fit()
-anova_lm = sm.stats.anova_lm(model, type= 2)
-print(anova_lm)
+model = ols('score ~ C(Computer) + C(Compiler)', data = df).fit()
+print(sm.stats.anova_lm(model, tpy=2))

@@ -1,9 +1,15 @@
+# Income case:
+
+# The recruiter company would like to know the difference between income with race and education. Then they decide to randomly collect the data from private employees. Use income.dat to perform the following problem:
+# a) Generate the ANOVA table and the Tukey comparisons of the difference for three type of therapy
+# b) Generate the corresponding ANOVA table
+
 import pandas as pd
 from statsmodels.formula.api import ols
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
 
-income = pd.read_csv('/Users/kaunghtetoo/Desktop/Stastics-Final/final_practise/topic-5/anova/topic-4/Salary.dat', sep='\s+')
+income = pd.read_csv('/Users/kaunghtetoo/Desktop/Income.dat', sep='\s+')
 print(income.head())
 
 fit = ols(formula = 'income ~ C(race)', data=income).fit()

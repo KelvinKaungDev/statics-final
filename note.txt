@@ -1,0 +1,18 @@
+different degree of freedom  ( t-distribution )
+
+Z-test ( ဒသမ မပါရဘူး/ population ပေးရမယ် / large data set )
+T-test ( mean ပေးထားမယ် ( average ပါရင် mean ),  population မပါရင် t- test )
+One Sample Proportion  (know  population AND sample,  Hypothesis တစ်ခုပါမယ် ( အဆိုတစ်ခု ), significance level )
+Two Sample Proportion → proportions_ztest  ( know  population AND sample, population နစ်ခုပါရင်, significance level  )
+Two Sample T Test ( diff proportion ) → ttest_ind  ( array နစ်ခုပါမယ်, array နစ်ခုက array.size က မညီဘူး, significance level  )
+Paired T-Test ( same proportion ) → ttest_rel ( array နစ်ခုပါမယ်, array နစ်ခုက array.size က ညီတယ်, significance level, before and after ပါတယ်  )
+
+Confidence Interval ပါရင်  Confidence Interval for Mean Change
+Bayesian Analysis  ပါရင် Bayesian Analysis
+
+ဒီလိုပါရင် income with race and education =  ( formula =  ဒီလိုရေး income ~ C(race) + education )
+ANOVA table and the Tukey comparisons  ပါရင် income အပုဒ်ကိုသွား
+association between  and two-way contingency table ပါရင် chi-square နဲ့ဖြေ
+Data set at least 3, All population variances are equally ( variance ညီမညီစစ်ခိုင်းရင် Levene’s Test နဲ့ဖြေ )
+Data set at least 3, difference between ( one way anova )
+Data set at least 3 and column -> 2 categories or more ( two ways anova )

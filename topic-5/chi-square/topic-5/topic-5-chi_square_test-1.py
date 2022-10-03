@@ -38,6 +38,8 @@ if INSPECT:
     # print the p-value
     print(p)
 
+plt.show()
+
 # The p-value is 37.67% -> we do not reject the null hypothesis at 95% level of confidence
 # The null hypothesis was that `Smokers` and `Gender` are independent
 # The contingency table was 2×2, we could have applied z-test for proportions instead of chi-square test

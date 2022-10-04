@@ -1,6 +1,6 @@
 different degree of freedom  ( t-distribution )
 
-Z-test ( ဒသမ မပါရဘူး/ population ပေးရမယ် / large data set )
+Z-test ( population ပေးရမယ် / large data set )
 T-test ( mean ပေးထားမယ် ( average ပါရင် mean ),  population မပါရင် t- test )
 One Sample Proportion  (know  population AND sample,  Hypothesis တစ်ခုပါမယ် ( အဆိုတစ်ခု ), significance level )
 Two Sample Proportion → proportions_ztest  ( know  population AND sample, population နစ်ခုပါရင်, significance level  )

@@ -1,4 +1,5 @@
 # Netflix case:
+
 # Netflix would like to study the relationship between viewership program and viewer age (18 years or less, 19 –35 years, 36 –59 years and 60 years or older).
 # A sample of 250 Netflix viewers in each age group is randomly selected and the results was shown in the following table:
 # test the hypothesis at 5% significant level

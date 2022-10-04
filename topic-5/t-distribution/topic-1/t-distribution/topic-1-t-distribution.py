@@ -27,10 +27,9 @@ def t_pdfs(): # function that creates plot as in Figure 4.5
     for i in range(4):
         ax.plot(y, t.pdf(y, df[i]), lw=2)
     ax.plot(y, norm.pdf(y), lw=2, linestyle='dashed')
-    ax.legend(['df=5','df=50','df=500','df=500','normal'],loc='upper right')
+    ax.legend(['df=5','df=50','df=500','df=5000','normal'],loc='upper right')
 t_pdfs()#run the function
 plt.xlabel("y")
 plt.ylabel("Probability density function")
 plt.show()
-
 

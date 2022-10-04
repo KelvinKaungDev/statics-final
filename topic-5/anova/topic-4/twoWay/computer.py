@@ -15,7 +15,6 @@ df = pd.DataFrame({'Computer': np.repeat(['Model 1', 'Model 2', 'Model 3'], 3),
 
 print(df)
 
-
 import statsmodels.api as sm
 from statsmodels.formula.api import ols
 

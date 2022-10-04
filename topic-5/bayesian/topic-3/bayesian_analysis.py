@@ -4,7 +4,6 @@
 # a) Construct 95% confidence interval for the Bayesian population mean change on the first therapy
 # b) Construct 99% confidence interval for the Bayesian population mean change on the third therapy
 
-
 from itertools import groupby
 import numpy as np
 import pandas as pd
